@@ -35,7 +35,7 @@ inline size_t findByte(const uint8_t* array, const int size, const uint8_t byte)
 
 inline std::string vectorToHexString(const std::vector<uint8_t> &vec) {
     std::string result;
-    for (const auto byte : vec) {
+    for (const auto &byte : vec) {
         result += HEX[HIQU(byte)];
         result += HEX[LOQU(byte)];
     }

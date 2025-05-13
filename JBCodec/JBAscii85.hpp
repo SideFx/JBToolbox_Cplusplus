@@ -18,11 +18,11 @@ inline std::vector<uint8_t> Ascii85Encode(const std::vector<uint8_t> &payload) {
 	int j;
 	int pad = 0;
 	uint8_t enc[5] = {};
-	const uint64_t dataLen = payload.size();
+	const uint64_t l = payload.size();
 	uint8_t c;
-	while (i < dataLen) {
+	while (i < l) {
 		for (j = 0; j < 4; j++) {
-			if (i < dataLen) c = payload[i++]; else {
+			if (i < l) c = payload[i++]; else {
 				c = 0x00;
 				pad++;
 			}
@@ -50,8 +50,8 @@ inline std::vector<uint8_t> Ascii85Decode(const std::vector<uint8_t> &payload) {
 	uint32_t number = 0;
 	uint64_t i = 0;
 	int j;
-	const uint64_t dataLen = payload.size();
-	while (i < dataLen) {
+	const uint64_t l = payload.size();
+	while (i < l) {
 		if (payload[i] == cZero) {
 			for (j = 0; j < 4; j++) result.push_back(0x00);
 			i++;
@@ -60,7 +60,7 @@ inline std::vector<uint8_t> Ascii85Decode(const std::vector<uint8_t> &payload) {
 			number = 0;
 			int cnt = 0;
 			for (j = 0; j < 5; j++) {
-				if (i < dataLen) {
+				if (i < l) {
 					if (payload[i] < 33 || payload[i] > 117) break;
 					number = number * 85 + (payload[i] - cBase);
 					i++;
