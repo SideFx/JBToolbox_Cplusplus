@@ -115,10 +115,10 @@ inline std::vector<uint8_t> ComputeMd5(const std::vector<uint8_t> &payload) {
     }
     delete[] mc;
     for (i = 0, k = 0; i < 4; i++) {
-        result[k++] = rArray[i];
-        result[k++] = rArray[i] >> 8;
-        result[k++] = rArray[i] >> 16;
-        result[k++] = rArray[i] >> 24;
+        result[k++] = static_cast<uint8_t>(rArray[i]);
+        result[k++] = static_cast<uint8_t>(rArray[i] >> 8);
+        result[k++] = static_cast<uint8_t>(rArray[i] >> 16);
+        result[k++] = static_cast<uint8_t>(rArray[i] >> 24);
     }
     return result;
 }
