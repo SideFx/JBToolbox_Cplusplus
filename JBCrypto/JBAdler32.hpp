@@ -1,6 +1,7 @@
 //----------------------------------------------------------------------------------------------------------------------
-// Adler32 C++ implementation based on Wikipedia's C code, (w) 2025 by Jan Buchholz
+// Adler32 C++ implementation based on Wikipedia's C code
 // https://en.wikipedia.org/wiki/Adler-32
+// (w) 2025 Jan Buchholz
 //----------------------------------------------------------------------------------------------------------------------
 
 #pragma once

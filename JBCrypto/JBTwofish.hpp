@@ -1,6 +1,7 @@
 //------------------------------------------------------------------------------------------------------
-// Twofish C++ port based on Bruce Schneier's reference C implementation, (w) 2025 Jan Buchholz
+// Twofish C++ port based on Bruce Schneier's reference C implementation
 // https://www.schneier.com/academic/twofish/
+// (w) 2025 Jan Buchholz
 //------------------------------------------------------------------------------------------------------
 
 #pragma once

@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 // CRC64 (reversed ECMA-182 & reversed ISO) C++ implementation based on Wikipedia's web site
-// (w) 2025 by Jan Buchholz
 // https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+// (w) 2025 Jan Buchholz
 //----------------------------------------------------------------------------------------------------------------------
 
 #pragma once

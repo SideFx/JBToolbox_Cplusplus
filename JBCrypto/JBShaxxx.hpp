@@ -1,6 +1,7 @@
 //------------------------------------------------------------------------------------------------
-// Sha256/Sha512 C++ implementation based on Wikipedia's pseudo code, (w) 2025 by Jan Buchholz
+// Sha256/Sha512 C++ implementation based on Wikipedia's pseudo code
 // https://en.wikipedia.org/wiki/SHA-2
+// (w) 2025 Jan Buchholz
 //------------------------------------------------------------------------------------------------
 
 #pragma once

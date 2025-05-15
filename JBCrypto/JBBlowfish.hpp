@@ -1,6 +1,7 @@
 //----------------------------------------------------------------------------------------------------
-// Blowfish C++ port based on Bruce Schneier's reference C implementation, (w) 2025 Jan Buchholz
+// Blowfish C++ port based on Bruce Schneier's reference C implementation
 // https://www.schneier.com/academic/blowfish/download/
+// (w) 2025 Jan Buchholz
 //----------------------------------------------------------------------------------------------------
 
 #pragma once
