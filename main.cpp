@@ -33,6 +33,7 @@ int main() {
     while (key !=  "x") {
         std::cout << "\nPlease enter an option: ";
         getline(std::cin, key);
+        std::system("cls");
         if (key == "a") JBAdler32Selftest();
         else if (key == "b") JBCrc64Selftest();
         else if (key == "c") JBMd5Selftest();
