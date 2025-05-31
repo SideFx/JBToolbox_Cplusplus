@@ -13,6 +13,14 @@
 #include "JBSelftest/JBCrc64Selftest.hpp"
 #include "JBSelftest/JBMd5Selftest.hpp"
 
+void clearScreen() {
+#if defined(_WIN32)
+    std::system("cls");
+#else
+    std::system("clear");
+#endif
+}
+
 int main() {
     std::string key;
     std::cout << "\n-------------------------\nJB Toolbox Demo:\n-------------------------" << std::endl;
@@ -33,7 +41,7 @@ int main() {
     while (key !=  "x") {
         std::cout << "\nPlease enter an option: ";
         getline(std::cin, key);
-        std::system("cls");
+       clearScreen();
         if (key == "a") JBAdler32Selftest();
         else if (key == "b") JBCrc64Selftest();
         else if (key == "c") JBMd5Selftest();
